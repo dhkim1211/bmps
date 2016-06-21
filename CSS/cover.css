@@ -1,0 +1,260 @@
+/*
+ * Globals
+ */
+
+/* Links */
+a,
+a:focus,
+a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Custom default button */
+.btn-default
+ {
+  color: #2E9BDA;
+  text-shadow: none; /* Prevent inheritence from `body` */
+  background-color: #fff;
+  border: 1px solid #2E9BDA;
+  text-transform: uppercase;
+}
+
+.btn-default:hover,
+.btn-default:focus {
+  color: #fff;
+  text-shadow: none; /* Prevent inheritence from `body` */
+  background-color: #2E9BDA;
+  border: none;
+  text-transform: uppercase;
+}
+
+
+.shadow {
+  text-shadow: 1.5px 1.5px #111010;
+}
+
+#biz-title {
+  text-shadow: 1px 1px #2E9BDA;
+  opacity: 0.93;
+  font-size: 40px;
+}
+
+#tagline {
+  font-size: 1.2em;
+  color: #fff;
+}
+
+/*
+ * Base structure
+ */
+
+html,
+body {
+  height: 100%;
+  background-color: #333;
+}
+body {
+  color: #fff;
+  text-align: center;
+  text-shadow: 0 1px 3px rgba(0,0,0,.5);
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  background: url("../Assets/images/BMPScover3.jpg") no-repeat center;
+  background-size: 1400px 1000px;
+}
+
+.masthead-nav li {
+  text-decoration: none;
+}
+
+/* Extra markup and styles for table-esque vertical and horizontal centering */
+.site-wrapper {
+  display: table;
+  width: 100%;
+  height: 100%; /* For at least Firefox */
+  min-height: 100%;
+  -webkit-box-shadow: inset 0 0 100px rgba(0,0,0,.5);
+          box-shadow: inset 0 0 100px rgba(0,0,0,.5);
+
+}
+.site-wrapper-inner {
+  display: table-cell;
+  vertical-align: top;
+}
+.cover-container {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/* Padding for spacing */
+.inner {
+  padding: 30px;
+}
+
+#learn-more {
+  padding-top: 50px;
+  opacity: 0.95;
+}
+
+#homebox {
+  opacity: 0.95;
+}
+
+label {
+  font-size: 20px;
+
+}
+
+/*
+ * Header
+ */
+.masthead-brand {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.masthead-nav > li {
+  display: inline-block;
+}
+.masthead-nav > li + li {
+  margin-left: 20px;
+}
+.masthead-nav > li > a {
+  padding-right: 0;
+  padding-left: 0;
+  font-size: 18px;
+  font-weight: bold;
+  color: #fff; /* IE8 proofing */
+  color: rgba(255,255,255,.95);
+  border-bottom: 2px solid transparent;
+}
+.masthead-nav > li > a:hover,
+.masthead-nav > li > a:focus {
+  background-color: transparent;
+  border-bottom-color: #2E9BDA;
+}
+.masthead-nav > .active > a,
+.masthead-nav > .active > a:hover,
+.masthead-nav > .active > a:focus {
+  color: #fff;
+  border-bottom-color: #fff;
+}
+
+@media (min-width: 768px) {
+  .masthead-brand {
+    float: left;
+  }
+  .masthead-nav {
+    float: right;
+  }
+}
+
+
+/*
+ * Cover
+ */
+
+.cover {
+  padding: 0 20px;
+}
+.cover .btn-lg {
+  padding: 10px 20px;
+  font-weight: bold;
+}
+
+
+/*
+ * Footer
+ */
+
+.mastfoot {
+  color: #999; /* IE8 proofing */
+  color: rgba(255,255,255,.5);
+}
+
+
+/* Invisible Page - "About" section */
+
+#invisiblebox, #invisiblebox2{
+  margin: 100px 50px;
+  padding: 30px;
+  background-color: rgba(96, 96, 96, 0.5);
+  overflow: hidden;
+}
+
+#invisiblebox li {
+  list-style: none;
+}
+
+.svclist {
+  float: left;
+  margin: 0 auto;
+  width: 50%;
+  text-align: center;
+}
+
+#close-it, #close-it2 {
+  display: block;
+  float: right;
+  position: relative;
+  top: -10px;
+  right: -10px;
+  size: 20px;
+}
+
+#wrapbox {
+  background-color: rgba(96, 96, 96, 0.2);
+  height: 100px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+#contactUs > * {
+  padding: 20px;
+}
+
+#insta {
+  padding: 30px;
+}
+
+#map {
+  margin: 0 auto;
+}
+#map-canvas {
+  width: 100%;
+}
+
+
+/*
+ * Affix and center
+ */
+
+@media (min-width: 768px) {
+  /* Pull out the header and footer */
+  .masthead {
+    position: fixed;
+    top: 0;
+  }
+  .mastfoot {
+    position: fixed;
+    bottom: 0;
+  }
+  /* Start the vertical centering */
+  .site-wrapper-inner {
+    vertical-align: middle;
+  }
+  /* Handle the widths */
+  .masthead,
+  .mastfoot,
+  .cover-container {
+    width: 100%; /* Must be percentage or pixels for horizontal alignment */
+  }
+}
+
+@media (min-width: 992px) {
+  .masthead,
+  .mastfoot,
+  .cover-container {
+    width: 700px;
+  }
+}
